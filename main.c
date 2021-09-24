@@ -44,8 +44,8 @@ int main()
     //converting input to integer
     unsigned long long inputNumber = atoi(input);
 
-    printf("Your binary number:");
     //output binary
+    printf("Your binary number:");
     convertToBinary(inputNumber);
 
     printf("\nProgram ended with no errors\n");
