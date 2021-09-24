@@ -78,5 +78,5 @@ void convertToBinary(unsigned long long n) //recursive decimal to binary convert
 {
     if (n / 2 != 0)
         convertToBinary(n / 2);
-    printf("%d", n % 2);
+    printf("%d", (int)(n % 2));
 }
