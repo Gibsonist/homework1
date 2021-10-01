@@ -11,7 +11,7 @@ void convertToBinary(unsigned long long n);
 int main()
 {
     //input variable
-    char input[SIZE];
+    char input[SIZE], *end;
 
     //variable cleanout and user input
     for(int i = 0; i < SIZE; i++)
@@ -42,7 +42,7 @@ int main()
         return 1;
 
     //converting input to integer
-    unsigned long long inputNumber = atoi(input);
+    unsigned long long inputNumber = strtoull(input, &end, 10);
 
     //output binary
     printf("Your binary number:");
