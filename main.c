@@ -8,7 +8,7 @@
 int checkForNonDigits(char string[]);
 void convertToBinary(unsigned long long n);
 
-int main()
+int main(void)
 {
     //input variable
     char input[SIZE], *end;
@@ -52,7 +52,7 @@ int main()
     return 0;
 }
 
-int checkForNonDigits(char string[])
+int checkForNonDigits(char* string)
 {
     int counter = 0;
     if(string[0] == '\n') //check for empty input
